@@ -10,6 +10,7 @@ export default function Home() {
   const [menus, setMenus] = useState<
     { id: number; menu_name: string; price: number }[]
   >([]);
+  
 
   const fetchMenus = async () => {
     const { data, error } = await supabase
